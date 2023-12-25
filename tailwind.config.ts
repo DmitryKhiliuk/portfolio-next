@@ -7,16 +7,22 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {},
+    colors: {
+      white: 'rgb(255 255 255)',
+      black: 'rgb(0 0 0)',
+    },
+    screens: {
+      sm: {'max': '585px'},
+      md: '768px',
+      lg: '976px',
+      xl: '840px',
+      xxl: '1000px',
+    },
     fontFamily: {
       yanon: ['var(--font-yanone)']
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+
     },
   },
   plugins: [],
